@@ -1,0 +1,60 @@
+Super-Resolution
+Opis projekta
+Ovaj projekat ima za cilj rekonstrukciju slika vise rezolucije iz slika nize rezolucije koristeci autoencoder arhitekturu. Fokus je na prakticnoj izradi ML pipeline-a: priprema podataka, treniranje modela, evaluacija i analiza rezultata.
+
+Cilj
+Glavni cilj je razvoj modela koji moze da:
+
+prima low-resolution ulazne slike,
+generise high-resolution izlazne slike,
+zadrzi sto vise detalja i smanji vizuelne artefakte.
+Metodologija
+Pristup u projektu zasniva se na sledecim koracima:
+
+Priprema i ciscenje dataset-a.
+Kreiranje parova slika (niza i visa rezolucija).
+Treniranje autoencoder modela.
+Evaluacija performansi metrikama kvaliteta slike.
+Vizuelno poredjenje ulaza, ground-truth i predikcije modela.
+Plan rada
+Projekat je organizovan po fazama:
+
+Faza 1: Priprema podataka
+izbor dataset-a,
+standardizacija dimenzija slika,
+podela na trening, validacioni i test skup.
+Faza 2: Razvoj modela
+dizajn encoder-decoder arhitekture,
+definisanje loss funkcije,
+postavljanje osnovnih hiperparametara.
+Faza 3: Trening i tuning
+inicijalno treniranje modela,
+pracenje metrika po epohama,
+optimizacija hiperparametara.
+Faza 4: Evaluacija
+merenje kvaliteta rekonstrukcije (npr. PSNR, SSIM),
+analiza gresaka,
+vizuelna interpretacija rezultata.
+Faza 5: Zakljucak i dalje unapredjenje
+sumiranje rezultata,
+identifikacija ogranicenja,
+predlozi za sledece iteracije modela.
+Struktura projekta
+Planirana struktura repozitorijuma:
+
+data/ - podaci i podela skupova
+notebooks/ - eksperimentalni rad i analiza
+src/ - logika projekta (ucitavanje podataka, model, trening, evaluacija)
+models/ - sacuvani modeli i checkpoint-i
+results/ - metrike, grafici i primeri izlaza
+README.md - dokumentacija projekta
+Ocekivani rezultati
+Na kraju projekta ocekuje se:
+
+funkcionalan model za super-rezoluciju,
+merljiva poboljsanja kvaliteta slike,
+jasan pregled sta radi dobro, a sta zahteva unapredjenje.
+Sledeci koraci
+finalizacija izbora dataset-a,
+definisanje pocetne autoencoder arhitekture,
+pokretanje prvog trening ciklusa i analiza baznih rezultata.
